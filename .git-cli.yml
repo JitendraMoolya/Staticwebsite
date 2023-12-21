@@ -1,4 +1,9 @@
+satges: 
+  -build
+  -test
+
 build website:
+  stage: build
   image: node: 10.2.3
   script:
     - npm install
@@ -7,3 +12,7 @@ build website:
   artifcats:
     paths:
       - ./public 
+
+  test artifcat:
+  script:
+    -grep "Gatsby" ./public/index.html    
