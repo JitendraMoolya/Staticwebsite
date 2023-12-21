@@ -1,5 +1,5 @@
 build website:
-  image: node
+  image: node: 10.2.3
   script:
     - npm install
     - npm install -g gatsby-cli
